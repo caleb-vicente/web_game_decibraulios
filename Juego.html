@@ -1,0 +1,58 @@
+<html>
+  <head>
+<script type="text/javascript" src="js/pcanvas2Version.js"> </script>
+<link rel="stylesheet" type="text/css" href= "CSS/grafico.css"> </link>
+
+  </head >
+
+  <body>
+    <div id="background"></div>
+    <div id="juego" >
+      <canvas id="canvas" width="720" height="480"> </canvas>
+      <div id="B1" style="position: absolute; top:35%; left:42%; display: block;">
+      	<button id="boton" onclick="jugadores(1)" onmouseout=this.style.opacity=0.8; onmouseover=this.style.opacity=1;>Un jugador </button>
+      </div>
+
+      <div id="B2" style="position: absolute; top: 55%; left:42%; display: block;">
+      	<button id="boton" onclick="jugadores(2)" onmouseout=this.style.opacity=0.8; onmouseover=this.style.opacity=1;>Cooperativo</button>
+    	</div>
+      <div id="B3" style="position: absolute; top: 50%; left:42%; ">
+        <button id="boton" onclick="volver_a_jugar()" >Volver a jugar </button>
+      </div>
+      <form id="formulario" class="formulario" name="rellenar" action="#">
+        <br>Introduce tu nombre: <br><br>
+        Jugador1: <br><br>
+        <input id="personajef1" type="text"/><br><br>
+        <input id="submit" type="submit" value="Enter"/><br><br>
+      </form>
+      <form id="formulario2" class="formulario" name="rellenar" action="#">
+        <br>Introduce vuesto nombre: <br><br>
+        Jugador1: <br><br>
+        <input id="personaje1" type="text"/><br><br>
+        Jugador2: <br><br>
+        <input id="personaje2" type="text"/><br><br>
+        <input id="submit2" type="submit" value="Enter"/><br><br>
+      </form>
+    </div>
+
+
+
+	<span id="reloj" style="position:absolute;left:90%;top:90%;">
+	</span>
+
+
+    <video  id="video" autoplay controls>
+      <source src="media/video.mp4" type="video/mp4">
+    </video>
+    <audio  id="music">
+      <source src="media/soundfx/Chiptune_v1.ogg" type="audio/ogg">
+    </audio>
+    <audio  id="colision">
+      <source src="media/soundfx/smack.mp3" type="audio/mp3">
+    </audio>
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,187 @@
+<html>
+  <head>
+     <link rel="stylesheet" type="text/css" href="css.css">
+  </head>
+    <head>
+      <title> Decibraulios </title>
+       <meta charset="UTF-8"> </meta>
+     <meta name="author" content="César Caramazana" content= "Jaime Parras" content= "Irene Aragón" content= "Caleb Vicente"> </meta>
+
+        <script src="js/jss.js"></script>
+       <link rel="stylesheet" type="text/css" href="CSS/css.css">
+    </head>
+    <body>
+
+      <canvas id="ovalo_trasparente" class="canvas_ovalo_trasparente"></canvas>
+      <canvas id="ovalo" href=#juego class="micanvas canvas_ovalo" onmouseout=this.style.opacity=1; onmouseover=this.style.opacity=0.8;></canvas>
+      <a id="hiperbinculo" class="playjuego" href="Juego.html">hiperbinculo</a>
+
+      <canvas id="micanvas" class="micanvas canvas_play" onmouseout=ovalo.style.opacity=1; onmouseover=ovalo.style.opacity=0.8;></canvas>
+      <div class="tituloJuego"><p>ANGRYBRAULIOS</p></div>
+      <img id="personaje1" src="imagen/personaje1.png" class="personaje1" onmouseover="agrandar(personaje1)" onmouseout="empequenecer(personaje1)">
+      <img id="personaje2" src="imagen/personaje2.png" class="personaje2" onmouseover="agrandar(personaje2)" onmouseout="empequenecer(personaje2)">
+
+
+
+      <nav class="segunda_cabecera">
+          <ul style="none" class="menu" >
+              <li id="como_jugar" class="menu_li" onmouseover="ver(1)" onmouseout="ocultar(1)">
+                Cómo jugar
+                <ul  style="none" id="1" class="menu_desplegable">
+                  <li><a id="a_tematica" href="#tematica"> Tématica</a></li>
+                  <li><a id="a_instrucciones" href="#instrucciones"> Instrucciones</a></li>
+                </ul>
+              </li>
+              <li class="menu_li"  onmouseover="ver(2)" onmouseout="ocultar(2)">
+                Autores
+                <ul style="none" id="2"class="menu_desplegable">
+                  <li><a id="a_Cesar" href="#Cesar"> César</a></li>
+                  <li><a id="a_Irene" href="#Irene"> Irene</a></li>
+                  <li><a id="a_Caleb" href="#Caleb"> Caleb</a></li>
+                  <li><a id="a_Jaime" href="#Jaime"> Jaime</a></li>
+                </ul>
+              </li>
+              <li class="menu_li"  onmouseover="ver(3)" onmouseout="ocultar(3)">
+                Desarrollo
+                <ul  style="none" id="3"class="menu_desplegable">
+                  <li><a id="a_responsabilidades" href="#responsabilidades"> Responsabilidades</a></li>
+                  <li><a id="a_tecnicasytecnologias" href="#tecnicasytecnologias"> Técnicas y tecnologías</a></li>
+                  <li><a id="a_problemasydificultades" href="#problemasydificultades"> Problemas y dificultades</a></li>
+                  <li><a id="a_puntosfuertes" href="#puntosfuertes"> Puntos fuertes</a></li>
+                  <li><a id="a_planificacion" href="#planificacion"> Planificación</a></li>
+                </ul>
+              </li>
+              <li class="menu_li" >
+                <a id="a_referencias" href="#referencias"> Referencias</a>
+              </li>
+          </ul>
+      </nav>
+
+      <div class="background" id="background"></div>
+      <div class="background_fondo"></div>
+
+        <section id="1s" class="seccione">
+          <img src="imagen/logo1.png" class=i1>
+          <img src="imagen/logo2.png" class=i2>
+          <div class=subseccion>
+          <h2 class=titulo>CÓMO JUGAR</h2>
+          <h3><a name="tematica"></a>Temática</h3>
+            <p> Inspirado en una esperpéntica mezcla de cyberpunk y cartoon, la estética presenta unos paisajes urbanos y tecnológicos junto con extraños ambientes naturales (quizá extraterrestres) donde se mueven por los aires unos simpáticos pájaros que comparten familia con los Angry Birds </p>
+          <h3><a name="instrucciones"></a>Instrucciones</h3>
+            <ul type="none">
+              <li>Utiliza las flechas de posición de tu teclado para moverte arriba, abajo, a la izquierda y la derecha. En el modo cooperativo, tu compañero utilizará W: Arriba, S: Abajo, A: Izquierda y D: Derecha<br><br></li>
+              <li>Evita todos los objetos que se mueven por tu pantalla sin chocarte con los bordes y...<br><br></li>
+              <li class= "nombreRedes">¡AGUANTA HASTA QUE ACABE LA MÚSICA!</li>
+            </ul>
+          </div>
+        </section>
+        <section id="2s" class="seccione">
+          <div class=subseccion>
+          <h2 class=titulo >¡Conócenos! Solo tienes que pulsar sobre nosotros</h2>
+          <ul class=autores style="none">
+            <li><a  name="Cesar"></a><img id="cesar" src="imagen/cesar.png" height="30%" width="20%" onmouseout=this.style.opacity=1; onmouseover=this.style.opacity=0.6; class=iautor></img></li>
+            <li><a  name="Irene"></a><img id="irene" src="imagen/irene.png" height="30%" width="20%" onmouseout=this.style.opacity=1; onmouseover=this.style.opacity=0.6; class=iautor></img></li>
+            <li><a  name="Caleb"></a><img id="caleb" src="imagen/caleb.png" height="30%" width="20%" onmouseout=this.style.opacity=1; onmouseover=this.style.opacity=0.6; class=iautor></img></li>
+            <li><a name="Jaime"></a><img id="jaime" src="imagen/jaime.png" height="30%" width="20%" onmouseout=this.style.opacity=1; onmouseover=this.style.opacity=0.6; class=iautor></img></li>
+          </ul>
+          <ul>
+            <li class=infoAutores id="1a">Yo soy César Caramazana Zarzosa. Estudiante de ingeniería que disfruta de su tiempo libre con el cine clásico, la literatura, y viendo capítulos antiguos de Bricomanía.</li>
+            <li class=infoAutores id="2a">Soy Irene Aragón Soriano, actualmente estudiando Ingeniería de Sistemas Audiovisuales en el campus de Leganés de la Universidad Carlos III. Escuchar música, el cine e ir al gimnasio son tres de mis cosas favoritas.</li>
+            <li class=infoAutores id="3a">Me llamo Caleb Vicente Moreno, estudiate de Ingeniería de Sistemas Audiovisuales en la Carlos III, y becario en la propia Universidad. Me gustan todo tipo de deportes, los retos, y estar siempre activo.</li>
+            <li class=infoAutores id="4a">Mi nombre es Jaime Parras Vega, soy estudiante de tercer curso de Ingeniería de Sistemas Audiovisuales en la Carlos III de Madrid. Me gusta pasar mi tiempo libre jugando a juegos de mesa, leyendo, escuchando musica, viendo series y sobre todo disfrutando de una cerveza en buena compañía.</li>
+          </ul>
+        </div>
+
+        </section>
+        <section id="3s" class="seccione">
+          <ul style="none" class="pajaros">
+            <li><img src="imagen/lista1.png" height="40%" width="75%"></img></li><br>
+            <li><img src="imagen/lista2.png" height="40%" width="75%"></img></li><br>
+            <li><img src="imagen/lista1.png" height="40%" width="75%"></img></li><br>
+            <li><img src="imagen/lista2.png" height="40%" width="75%"></img></li><br>
+            <li><img src="imagen/lista1.png" height="40%" width="75%"></img></li><br>
+            <li><img src="imagen/lista2.png" height="40%" width="75%"></img></li><br>
+            <li><img src="imagen/lista1.png" height="40%" width="75%"></img></li><br>
+          </ul>
+
+          <h2 class=titulo2 >DESARROLLO</h2>
+          <div class="div_desarrollo">
+            <h3><a  name="responsabilidades"></a>Responsabilidades</h3>
+             <p>
+               <ul>
+                 <li> <h2 class="res">Irene</h2> <p> Principalmente encargada del diseño HTML y CSS. Estructuración de secciones, modelo de pestañas desplegables medienta Javascript y elección del estilo visual de los fondos y los sprites del Javascript. Encargada de realizar grabación y montaje del video </p>  </li>
+
+                 <li> <h2  class="res">Caleb</h2> <p> CSS del canvas central del HTML, y manejo del Javascript para elementos dinamicos en el HTML. Solución a problemas en el desarrollo del juego, creación del modelo de colisiones del juego en Javascript, funcionalidad de sprites y volver_a_jugar() </p></li>
+
+                 <li><h2  class="res"> Jaime</h2> <p> A cargo de la interacción de usuario del Javascript. Modelo de botones para modos 1 jugador y 2 jugadores. Diseño de la animación de aleteo de los personajes del juego y depuración de funciones de reset().</p></li>
+
+                 <li><h2  class="res"> César </h2> <p> Encargado principalmente del Javascript. Diseño del modelo de objetos, funciones elementales y niveles. Compositor de la música del juego y voz del video de presentación y depuración del HTML. </p></li>
+
+               </ul>
+             </p>
+            <h3><a  name="tecnicasytecnologias"></a>Técnicas y tecnologías</h3>
+            <p> El desarrollo del juego ha requerido de la puesta en práctica de todos los conceptos aprendidos durante las semanas previas al proyecto. El juego se basa en una programación orientada a objetos, habiendo creado principalmente un Objeto Jugador y un Objeto Obstáculo, cada uno con propiedades análogas pero con diferencias fundamentales (sobre todo en el movimiento y el control). Pero no solo eso, porque también hay una clase dedicada a las imágenes y otra a los textos que se dibujan en el canvas, para faciliar su insercción dentro de una propia partida. </p>
+            <p> La estética del fondo varía en función de la música, y es que ésta es quien marca (mediante su atributo currentTime) cuándo sale cada obstáculo y cuándo introducimos otro background (una manera visual de diferenciar los "niveles"). Los personajes presentan una animación cercana a los sprites, pues aunque no tenemos cada posición en una única imagen (la referencia de donde las hemos obtenido no estaba dirigida a esta tarea), sí se van intercalando para generar ese efecto de aleteo de los pájaros. </p>
+            <p> La interacción con el usuario proviene, además de la posibilidad de manejar a su personaje, mediante un formulario inicial con el que introducir su nombre. Los textos de colisión del juego estarán personalizados.  </p>
+            <h3><a  name="problemasydificultades"></a>Problemas y dificultades</h3>
+              <p> Las mayores complicaciones con las que nos hemos encontrado al realizar el proyecto han provenido tanto del CSS como del Javascript. Ajustar las posiciones de las imágenes en la página no es tarea sencilla, y en numerosas ocasiones nos encontramos con que un contenedor que creíamos bien colocado, desajusta su tamaño al incluir otros elementos. Por otro lado, el Javascript está lleno de detalles que, aunque sean clasificables como "tonterías", nos han dado quebraderos de cabeza. Las colisiones, el control, las excepciones del DOM, algunos de los contratiempos que más nos han afectado.</p>
+            <h3><a  name="puntosfuertes"></a>Puntos fuertes</h3>
+              <p>El diseño del menú del juego es uno de nuestros aspectos más destacables, remarcando el apartado de Autores. Las CSS están notablemente trabajadas, cuidando todos los detalles para que el juego se ajuste lo máximo posible a cualquier tipo de pantalla. Cabe destacar también la música de fondo del juego, puesto que es completamente original. Y el juego, pese a no ser un producto de calidad profesional, resulta ser desafiante y divertido. </p>
+            <h3><a  name="planificacion"></a>Planificación</h3>
+
+            <table class="tabla">
+              <tr class=fila2>
+              <td> <h2> Semana </h2> </td> <td> <h2> Objetivos </h2> </td>
+              </tr>
+              <tr>
+              <td>  1ª Semana  </td> <td> Diseño estructural del HTML. Infraestructura del Javascript y reparto de responsabilidades </td>
+              </tr>
+              <tr>
+              <td>  2ª Semana </td> <td> Inclusión de CSS en la página. Objetos Jugador y Obstáculos con movimiento </td>
+              </tr>
+              <tr>
+              <td>  3ª Semana </td> <td> Menú de navegación avanzado. Colisiones de los objetos y sistema de vidas </td>
+              </tr>
+              <tr>
+              <td>  4ª Semana </td> <td> Imágenes del HTML y Javascript. Inclusión de música propia y control fluido de personaje </td>
+              </tr>
+              <tr>
+              <td>  5ª Semana </td> <td>  Depuración, inclusión de texto en HTML y mejoras Javascript </td>
+              </tr>
+            </table>
+        </div>
+        </section>
+        <section id="4s" class="seccione">
+          <h2 class=titulo><a name="referencias"></a>REFERENCIAS</h2>
+          <dl class="ref">
+            <dt>Fondos:</dt>
+            <dd>- <a href= "https://wall.alphacoders.com/big.php?i=7742&lang=Spanish"> Alpha Coders </a></dd>
+            <dd>- <a href= "https://tecnoslave.com/analisis-insanely-twisted-shadow-planet"> Tecnoslave </a> </dd>
+            <dd>- <a href= "https://blog.uptodown.com/mejores-juegos-android-no-conexion-internet"> Up to Down</a> </dd>
+            <dd>- <a href= "https://aprendiendoadisenyarjuegos.blogspot.com/2016/05/unity3d-cthulhu-runs-mi-primer-runner.html"> Aprendiendo a diseñar juegos </a></dd>
+            <dt><br/>Objetos:</dt>
+            <dd>- <a href= "https://www.ehowenespanol.com/dibujar-ladrillos-imitacion-muro-plantillas-info_250210"> eHow </a></dd>
+            <dd>- <a href= "http://papelpintadobarato.es/papel-pintado-muro-de-piedra-vinilico/1141673-papel-pintado-muro-de-piedra-estilo-rustico-color-gris.html"> Papel pintado </a></dd>
+            <dd>- <a href= "https://www.freepng.es/png-8bet7n"> Free Png </a></dd>
+            <dt><br/>Sprites personajes:</dt>
+            <dd>- <a href= "https://opengameart.org/content/2d-complete-characters"> Open Game Art </a></dd>
+            <dt><br/>Inspiración del juego:</dt>
+            <dd>- <a href="https://www.youtube.com/watch?v=A3dlIiNVgVU"> Flat Heroes </a></dd>
+            <dt><br/>Referencia del Javascript:</dt>
+            <dd>- <a href="https://desarrolloweb.com"> Desarrollo Web </a> </dd>
+            <dd>- <a href="https://www.w3schools.com/graphics/"> W3 Schools </a> </a></dd>
+
+          </dl>
+        </section>
+
+      <!--<div class="segunda_cabecera">segunda prueba</div>-->
+
+      <footer  id="bgrojo"; class="alinearCentro" >
+          <img src="imagen/redes.png" height="10%" width="20%"></img>
+
+            <p class= "nombreRedes"> ¡SÍGUENOS EN REDES! @Decibraulios </p>
+      <p class= "nombreRedes"> Aplicaciones Multimedia <br> 2018-2019 </p>
+      </footer>
+
+    </body>
+  </html>

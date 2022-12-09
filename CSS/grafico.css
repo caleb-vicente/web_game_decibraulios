@@ -1,0 +1,78 @@
+
+canvas{
+
+ 	padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 3px;
+  border-color: #FFFFFF;
+  background-color: #E0F8F7;
+  vertical-align: middle;
+  display: block;
+}
+#juego{
+	position:absolute;
+	top:25%;
+	left:25%;
+	width: 50%;
+	height:50%;
+}
+#boton{
+	text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #B5A16A;
+  border-radius: 6px;
+  border: 2px solid #000000;
+	width: 100%;
+  opacity: 0.8;
+
+}
+video#video{
+  position:absolute;
+	top:20%;
+	left:20%;
+	width: 60%;
+	height:60%;
+}
+form.formulario{
+  display:none;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #B5A16A;
+  border-radius: 6px;
+  border: 2px solid #000000;
+  text-align: center;
+  width:40%;
+}
+
+#B1{
+  width: 20%;
+	height: 10%;
+}
+#B2{
+  width: 20%;
+	height:10%;
+}
+#B3{
+  display:none;
+}
+#background{
+  background-color: black;
+  height: 100%;
+  z-index: -1;
+}
+#reloj{
+	size:'20';
+	font-family: Georgia;
+	color:#ffffff;
+
+}
