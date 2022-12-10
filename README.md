@@ -8,3 +8,5 @@ Run the index.html file to start playing
 Enjoy! Will you be able to beat the top score? 
 
 We leave you a demo to see how it works:
+
+[!Watch the video](https://github.com/caleb-vicente/web_game_decibraulios/blob/main/media/video.mp4)
